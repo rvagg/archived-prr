@@ -4,7 +4,7 @@ An sensible alternative to `Object.defineProperty()`. Available in npm and Ender
 
 ## Usage
 
-Set the property `'foo'` (`obj.foo`) to have the value `'bar'` with default options (`'enumerable'`, `'configurable'` and `'writable'` are all `'false'`):
+Set the property `'foo'` (`obj.foo`) to have the value `'bar'` with default options (`'enumerable'`, `'configurable'` and `'writable'` are all `false`):
 
 ```js
 prr(obj, 'foo', 'bar')
@@ -24,7 +24,9 @@ prr(obj, { one: 'one', two: 'two' })
 prr(obj, { one: 'one', two: 'two' }, { enumerable: true, writable: true })
 ```
 
-But obviously, having to write out the full options object makes it nearly as bad as the original `Object.defineProperty()` so we can **simplify**.
+### Simplify!
+
+But obviously, having to write out the full options object makes it nearly as bad as the original `Object.defineProperty()` so we can simplify.
 
 As an alternative method we can use an options string where each character represents a option: `'e'=='enumerable'`, `'c'=='configurable'` and `'w'=='writable'`:
 
