@@ -1,7 +1,7 @@
 {
   "name": "prr",
   "description": "A better Object.defineProperty()",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://github.com/rvagg/prr",
   "author": "Rod Vagg <rod@vagg.org> (https://github.com/rvagg)",
   "keywords": [
